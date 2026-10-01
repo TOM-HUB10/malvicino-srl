@@ -283,7 +283,7 @@
   }
   .product-info{padding:30px;flex:1;display:flex;flex-direction:column;}
   .product-info h3{font-size:1.3rem;font-weight:800;margin-bottom:15px; color: var(--primary);}
-  .product-info p{color:var(--text-light);font-size:0.95rem;margin-bottom:25px;flex:1;}
+  .product-info p{color:var(--text-light);font-size:0.95rem;margin-bottom:15px;flex:1;}
   .btn-outline{
     display:inline-flex;align-items:center;gap:10px;
     color:var(--primary);text-decoration:none;font-weight:800;font-size:0.95rem;
@@ -291,6 +291,42 @@
     transition:all .25s ease; text-transform: uppercase;
   }
   .btn-outline:hover{color:var(--accent);border-color:var(--accent);gap:15px;}
+
+  /* ESTILOS DE LA NUEVA CAJITA DE PRECIOS MAYORISTAS */
+  .caja-mayorista {
+    background-color: #f4f6f8;
+    border-radius: 8px;
+    padding: 12px 15px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #e1e4e8;
+  }
+  .aviso-precio {
+    font-size: 0.75rem !important;
+    color: #6c757d !important;
+    font-style: italic;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px !important;
+  }
+  .datos-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 0.85rem;
+    color: #333;
+  }
+  .dato-fila {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .total-destacado {
+    margin-top: 6px;
+    padding-top: 8px;
+    border-top: 1px dashed #cdd4da;
+    font-size: 0.95rem;
+    color: #0b1c31;
+  }
 
   /* ---------- OPERATION AREA ---------- */
   .area{
@@ -480,6 +516,7 @@
   </div>
 
   <div class="products-grid">
+    <!-- PRODUCTO 1: SACACORCHOS -->
     <div class="product-card reveal">
       <div class="product-img">
         <span class="product-tag">TOP VENTAS</span>
@@ -488,10 +525,22 @@
       <div class="product-info">
         <h3>Sacacorchos Eléctrico</h3>
         <p>Mecanismo de extracción automática en acero inoxidable. Diseño elegante, ideal para vinotecas, regalos empresariales y bazares de alto nivel.</p>
+        
+        <!-- NUEVA CAJITA DE PRECIOS -->
+        <div class="caja-mayorista">
+          <p class="aviso-precio">Valores de referencia estimativos</p>
+          <div class="datos-lista">
+            <div class="dato-fila"><span>Unidades x bulto:</span> <strong>30 un.</strong></div>
+            <div class="dato-fila"><span>Precio Unitario:</span> <strong>$ 14.835</strong></div>
+            <div class="dato-fila total-destacado"><span>Total Bulto:</span> <strong>$ 445.050</strong></div>
+          </div>
+        </div>
+
         <a href="#contacto" class="btn-outline nav-scroll">Cotizar volumen <i class="fas fa-arrow-right"></i></a>
       </div>
     </div>
 
+    <!-- PRODUCTO 2: INFLADOR -->
     <div class="product-card reveal" style="transition-delay: 0.1s;">
       <div class="product-img">
         <span class="product-tag" style="background:var(--accent); color:var(--primary);">NOVEDAD</span>
@@ -500,10 +549,22 @@
       <div class="product-info">
         <h3>Inflador Eléctrico Portátil</h3>
         <p>Batería recargable y medidor digital. Alta demanda en estaciones de servicio, casas de repuestos automotores y artículos del hogar.</p>
+        
+        <!-- NUEVA CAJITA DE PRECIOS -->
+        <div class="caja-mayorista">
+          <p class="aviso-precio">Valores de referencia estimativos</p>
+          <div class="datos-lista">
+            <div class="dato-fila"><span>Unidades x bulto:</span> <strong>20 un.</strong></div>
+            <div class="dato-fila"><span>Precio Unitario:</span> <strong>$ 27.025</strong></div>
+            <div class="dato-fila total-destacado"><span>Total Bulto:</span> <strong>$ 540.500</strong></div>
+          </div>
+        </div>
+
         <a href="#contacto" class="btn-outline nav-scroll">Cotizar volumen <i class="fas fa-arrow-right"></i></a>
       </div>
     </div>
 
+    <!-- PRODUCTO 3: MOLINILLOS -->
     <div class="product-card reveal" style="transition-delay: 0.2s;">
       <div class="product-img">
         <img src="Captura de pantalla 2026-09-28 195658.jpg" alt="Molino / Salero Eléctrico">
@@ -511,6 +572,17 @@
       <div class="product-info">
         <h3>Molino / Salero Eléctrico</h3>
         <p>Molienda ajustable con iluminación LED integrada. Un producto sofisticado destacado por su alta rotación en bazares y tiendas de diseño.</p>
+        
+        <!-- NUEVA CAJITA DE PRECIOS -->
+        <div class="caja-mayorista">
+          <p class="aviso-precio">Valores de referencia estimativos</p>
+          <div class="datos-lista">
+            <div class="dato-fila"><span>Unidades x bulto:</span> <strong>20 un. (Set x2)</strong></div>
+            <div class="dato-fila"><span>Precio Unitario:</span> <strong>$ 20.010</strong></div>
+            <div class="dato-fila total-destacado"><span>Total Bulto:</span> <strong>$ 400.200</strong></div>
+          </div>
+        </div>
+
         <a href="#contacto" class="btn-outline nav-scroll">Cotizar volumen <i class="fas fa-arrow-right"></i></a>
       </div>
     </div>
